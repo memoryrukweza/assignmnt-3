@@ -1,0 +1,1204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero {
+  background-image: url(./img/zebra\ banner\ 2\ 1.png);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.hero h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero #chev {
+  position: absolute;
+  margin-left: 45%;
+  bottom: 10px;
+}
+.hero #menu {
+  margin-left: 90%;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  width: 5%;
+}
+.hero .navba {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-right: 10%;
+}
+.hero .links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.hero h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: orangered;
+}
+.hero .hr {
+  border-bottom: 1px solid white;
+  margin-top: 5px;
+}
+.hero .arc {
+  position: absolute;
+  display: flex;
+  margin-left: 80%;
+  flex-direction: column;
+  top: 39%;
+  justify-content: space-between;
+}
+.hero .arc img {
+  height: 30px;
+  width: 20px;
+  margin: 10px 0;
+}
+
+.about {
+  padding-top: 70px;
+}
+.about .story {
+  text-align: center;
+}
+.about .story h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+.about .story p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.about .story button {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+  height: 50px;
+  width: 70px;
+}
+.about .last {
+  display: none;
+}
+.about .top {
+  margin-top: 15px;
+}
+
+.activity {
+  text-align: center;
+  padding: 70px 15px;
+}
+.activity h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+.activity .activities {
+  display: flex;
+  flex-direction: column;
+}
+.activity .activities .inner {
+  position: relative;
+  color: white;
+}
+.activity .activities .inner #middle {
+  height: 380px;
+}
+.activity .activities .inner h3 {
+  position: relative;
+  bottom: 30px;
+  left: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.activity .activities .inner .overlay-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.507);
+  opacity: 0;
+}
+.activity .activities .inner .overlay-text h4 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 12px;
+}
+.activity .activities .inner .overlay-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+.iteneries {
+  text-align: center;
+  padding: 70px 15px;
+}
+.iteneries h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+.iteneries p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.iteneries img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.iteneries .one,
+.iteneries .two,
+.iteneries .three {
+  display: none;
+}
+
+.sight {
+  text-align: center;
+  padding: 70px 15px;
+  color: white;
+}
+.sight h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: black;
+}
+.sight p,
+.sight li {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.sight ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.sight .price {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 15px 0;
+}
+.sight .price p {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sight .see {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 15px 0;
+  width: 100%;
+}
+.sight .see p {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sight .see img {
+  width: 100%;
+}
+.sight .luxury {
+  background-color: orangered;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding: 20px 20px;
+}
+.sight h4 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.sight .m {
+  height: 68.4vh;
+  width: 100%;
+}
+.sight .text {
+  position: relative;
+}
+.sight .text .txt {
+  height: 99%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.sight .inf {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonials {
+  text-align: center;
+  padding-top: 0px;
+}
+.testimonials h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+.testimonials .img {
+  position: relative;
+}
+.testimonials .item {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials .item h4 {
+  color: white;
+  margin-bottom: -200px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+.testimonials .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+  margin: 20px 0;
+}
+.testimonials .info img {
+  margin-bottom: 15px;
+}
+.testimonials .info hr {
+  background-color: red;
+  width: 20%;
+}
+.testimonials .info p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  width: 70px;
+}
+.testimonials .info h4 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+gallery {
+  text-align: center;
+  padding: 70px 0;
+}
+gallery h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+gallery .one {
+  height: 47vh;
+  display: none;
+}
+gallery .two {
+  height: 47vh;
+}
+gallery .three {
+  height: 47vh;
+}
+gallery .four {
+  margin-left: 30px;
+  height: 47vh;
+  margin-top: 12px;
+  display: none;
+}
+gallery .five {
+  margin-left: 30px;
+  height: 47vh;
+  margin-top: 12px;
+  display: none;
+}
+gallery .six {
+  margin-left: 30px;
+  height: 47vh;
+  margin-top: 12px;
+  display: none;
+}
+gallery .seven {
+  height: 47vh;
+  margin-top: 12px;
+  margin-left: 17px;
+  display: none;
+}
+
+footer {
+  background-color: orangered;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+footer h3 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 25px;
+}
+footer p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+footer form .in {
+  padding: 7px;
+  border: 1px solid white;
+  outline: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer form .btn {
+  padding: 11px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  outline: 0;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .fotter {
+  margin-bottom: 30px;
+}
+footer .copyright {
+  margin-top: 30px;
+  text-align: center;
+  border: 2px solid white;
+  padding-top: 20px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .about {
+    padding-top: 100px;
+  }
+  .about .story {
+    text-align: left;
+  }
+  .about .story h2 {
+    font-size: 45px;
+  }
+  .about .story p {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  .about .story button {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    height: 50px;
+    width: 50px;
+    outline: 0;
+  }
+  .about .story .button:hover {
+    background-color: rgba(228, 65, 6, 0.945);
+    border: 1px solid rgba(228, 65, 6, 0.945);
+  }
+  .about .last {
+    display: block;
+  }
+  .about .middle {
+    margin-top: 130px;
+  }
+  .about .top {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .activity {
+    text-align: left;
+    padding: 100px 70px;
+  }
+  .activity h2 {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+  }
+  .activity .activities {
+    display: flex;
+    flex-direction: row;
+  }
+  .activity .activities .inner {
+    position: relative;
+    color: white;
+    margin-right: 15px;
+  }
+  .activity .activities .inner h3 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 30px;
+  }
+  .activity .activities .inner .overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .activity .activities .inner .overlay-text h4 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 12px;
+  }
+  .activity .activities .inner .overlay-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 12px;
+  }
+  .activity .activities .inner:hover h3 {
+    display: none;
+  }
+  .iteneries {
+    text-align: left;
+    padding: 0px 15px;
+  }
+  .iteneries h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .iteneries p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 58;
+  }
+  .iteneries img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .iteneries .one,
+  .iteneries .two,
+  .iteneries .three {
+    display: block;
+  }
+  .iteneries .items {
+    display: flex;
+    margin-top: 20px;
+  }
+  .iteneries .items .first {
+    margin-top: 60px;
+  }
+  .iteneries .items .second {
+    margin-top: 100px;
+  }
+  .iteneries .items .third {
+    margin-top: 30px;
+  }
+  .iteneries .items .me {
+    position: relative;
+    top: -200px;
+  }
+  .iteneries .items .you {
+    position: relative;
+    top: -100;
+  }
+  .iteneries .items .item {
+    margin: 0 10px;
+  }
+  .testimonials {
+    text-align: left;
+    padding-top: 100px;
+  }
+  .testimonials h2 {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .testimonials .img {
+    position: relative;
+  }
+  .testimonials .img .item {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.223);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .testimonials .img .item h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  .testimonials .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 100%;
+    margin: 0px 0;
+  }
+  .testimonials .info img {
+    margin-bottom: 15px;
+  }
+  .testimonials .info hr {
+    background-color: red;
+    width: 20%;
+  }
+  .testimonials .info p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    width: 70%;
+  }
+  .testimonials .info h4 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 15px;
+  }
+  .gallery {
+    text-align: left;
+    padding: 70px 0;
+  }
+  .gallery h2 {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .gallery .one {
+    margin-left: 30px;
+    height: 47vh;
+    display: block;
+  }
+  .gallery .two {
+    margin-left: 20px;
+    height: 47vh;
+  }
+  .gallery .three {
+    height: 47vh;
+  }
+  .gallery .four {
+    margin-left: 30px;
+    height: 47vh;
+    margin-top: 12px;
+    display: block;
+  }
+  .gallery .five {
+    margin-left: 30px;
+    height: 47vh;
+    margin-top: 12px;
+    display: block;
+  }
+  .gallery .six {
+    margin-left: 30px;
+    height: 47vh;
+    margin-top: 12px;
+    display: block;
+  }
+  .gallery .seven {
+    height: 47vh;
+    margin-top: 12px;
+    margin-left: 17px;
+    display: block;
+  }
+  .sight {
+    padding: 0px 15px;
+    color: white;
+  }
+  .sight h2 {
+    text-align: left;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    color: black;
+  }
+  .sight p,
+  .sight li {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .sight ul {
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  .sight .W {
+    height: 66vh;
+  }
+  .sight .price {
+    padding: 15px 0;
+  }
+  .sight .price p {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sight .see {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .sight .see p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sight .see img {
+    width: 100%;
+  }
+  .sight .luxury {
+    background-color: orangered;
+    color: white;
+    align-items: left;
+    width: 50%;
+    padding: 20px 20px;
+  }
+  .sight h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .sight .m {
+    height: auto;
+    width: 50%;
+  }
+  .sight .text {
+    position: relative;
+  }
+  .sight .text .txt {
+    height: 99%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .sight .inf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  footer {
+    padding-top: 60px;
+    text-align: left;
+  }
+  footer h3 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 23px;
+  }
+  footer p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  footer form .in {
+    padding: 7px;
+    border: 1px solid white;
+    outline: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer form .btnn {
+    padding: 11px;
+    border: 1px solid black;
+    color: white;
+    outline: 0;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  footer .fotter-item {
+    margin-bottom: 30px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero {
+    background-image: url(./img/1\ banner\ \ -\ hero.png);
+    position: relative;
+    background-size: cover;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+  }
+  .hero h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .hero #chev {
+    position: absolute;
+    margin-left: 50%;
+    bottom: 10px;
+  }
+  .hero #menu {
+    margin-left: 93%;
+    display: flex;
+    position: absolute;
+    padding-top: 20px;
+    margin-right: 20%;
+  }
+  .hero .navba {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-right: 10%;
+  }
+  .hero .links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+  .hero h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: orangered;
+  }
+  .hero .hr {
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+  }
+  .hero .arc {
+    position: absolute;
+    display: flex;
+    margin-left: 95%;
+    flex-direction: column;
+    top: 39%;
+    justify-content: space-between;
+  }
+  .hero .arc img {
+    height: 20px;
+    margin-left: 60%;
+    bottom: 10px;
+  }
+  .hero span {
+    display: none;
+  }
+  .about {
+    padding-top: 100px;
+  }
+  .about .story {
+    text-align: left;
+  }
+  .about .story h2 {
+    font-size: 45px;
+    margin-bottom: 100px;
+  }
+  .about .story p {
+    font-size: 15px;
+    margin-bottom: 39px;
+    line-height: 1.4;
+  }
+  .about .story button {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    height: 50px;
+    width: 50%;
+    outline: 0;
+  }
+  .about .story .button:hover {
+    background-color: rgba(228, 65, 6, 0.945);
+    border: 1px solid rgba(228, 65, 6, 0.945);
+  }
+  .about .last {
+    display: block;
+  }
+  .about .middle {
+    margin-top: 130px;
+  }
+  .about .top {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .iteneries h2 {
+    font-size: 45px;
+  }
+  .iteneries p {
+    width: 54%;
+  }
+  .activity {
+    padding: 70px 15px;
+  }
+  .activity h2 {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+  }
+  .activity .activities .inner {
+    position: relative;
+    color: white;
+  }
+  .activity .activities .inner inner-img {
+    height: 10px;
+  }
+  .activity .activities .inner #middle {
+    height: 100%;
+  }
+  .activity .activities .inner h3 {
+    position: relative;
+    bottom: 30px;
+    left: 25%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .activity .activities .inner .overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    opacity: 0;
+  }
+  .activity .activities .inner .overlay-text h4 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 12px;
+  }
+  .activity .activities .inner .overlay-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 12px;
+  }
+  .activity .activities .inner .overlay-text .overlay-text {
+    opacity: 1;
+    transition: 15;
+    padding: 0 10px;
+  }
+  .activity .testimonials {
+    text-align: left;
+    padding-top: 100px;
+  }
+  .activity .testimonials h2 {
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .activity .testimonials .img {
+    position: relative;
+    width: 100%;
+  }
+  .activity .testimonials .img .item {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.223);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .activity .testimonials .img .item h4 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  .activity .testimonials .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    height: 100%;
+    margin: 0px 0;
+  }
+  .activity .testimonials .info img {
+    margin-bottom: 15px;
+  }
+  .activity .testimonials .info hr {
+    background-color: red;
+    width: 20%;
+  }
+  .activity .testimonials .info p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    width: 70%;
+  }
+  .activity .testimonials .info h4 {
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-size: 15px;
+  }
+  .activity .sight {
+    padding: 0px 15px;
+    color: white;
+  }
+  .activity .sight h2 {
+    text-align: left;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    color: black;
+  }
+  .activity .sight li {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .activity .sight ul {
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  .activity .sight .price {
+    border: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 15px 0;
+  }
+  .activity .sight .price p {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .activity .sight .see {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .activity .sight .see p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .activity .sight .see img {
+    width: 12%;
+  }
+  .activity .sight .luxury {
+    background-color: orangered;
+    color: white;
+    align-items: left;
+    width: 50%;
+    padding: 20px 20px;
+  }
+  .activity .sight h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .activity .sight .m {
+    height: auto;
+    width: 50%;
+  }
+  .activity .sight .text {
+    position: relative;
+  }
+  .activity .sight .text .txt {
+    height: 99%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .activity .sight .inf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sight .w {
+    height: 79vh;
+  }
+}
+footer {
+  padding-top: 60px;
+  text-align: left;
+}
+footer h3 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 23px;
+}
+footer p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+footer form .in {
+  padding: 7px;
+  border: 1px solid white;
+  outline: 0;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer form .btnn {
+  background-color: black;
+  padding: 8px;
+  border: 1px solid white;
+  color: white;
+  outline: 0;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  right: 2.1%;
+}
+footer .fotter-item {
+  margin-bottom: 30px;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
